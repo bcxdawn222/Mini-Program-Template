@@ -1,0 +1,20 @@
+[submodule "references/erpnext"]
+	path = references/erpnext
+	url = https://github.com/bcxdawn222/erpnext.git
+	branch = develop
+[submodule "references/aureuserp"]
+	path = references/aureuserp
+	url = https://github.com/bcxdawn222/aureuserp.git
+	branch = master
+[submodule "references/twenty"]
+	path = references/twenty
+	url = https://github.com/bcxdawn222/twenty.git
+	branch = main
+[submodule "references/dolibarr"]
+	path = references/dolibarr
+	url = https://github.com/bcxdawn222/dolibarr.git
+	branch = develop
+[submodule "references/monica"]
+	path = references/monica
+	url = https://github.com/bcxdawn222/monica.git
+	branch = main

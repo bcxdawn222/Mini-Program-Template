@@ -15,6 +15,7 @@ DOCUMENTS = (
     ROOT / "README.md",
     ROOT / "docs" / "sources.md",
     ROOT / "docs" / "style-direction.md",
+    ROOT / "docs" / "open-source-references.md",
     ROOT / "docs" / "candidates" / "a-compact.md",
     ROOT / "docs" / "candidates" / "b-white.md",
     ROOT / "docs" / "candidates" / "c-neutral.md",
