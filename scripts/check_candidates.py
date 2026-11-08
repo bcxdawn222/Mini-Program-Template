@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCUMENTS = (
     ROOT / "README.md",
     ROOT / "docs" / "sources.md",
+    ROOT / "docs" / "style-direction.md",
     ROOT / "docs" / "candidates" / "a-compact.md",
     ROOT / "docs" / "candidates" / "b-white.md",
     ROOT / "docs" / "candidates" / "c-neutral.md",
@@ -89,7 +90,7 @@ def check() -> None:
             if not response.read(1):
                 raise ValueError(f"来源引用为空：{url}")
         logging.info("固定版本来源引用通过：%s", url)
-    logging.info("完成：五份公开文档、三组候选、八个外链原图")
+    logging.info("完成：%d 份公开文档、三组候选、八个外链原图", len(DOCUMENTS))
 
 
 def main() -> None:
