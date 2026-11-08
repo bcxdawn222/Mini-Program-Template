@@ -8,10 +8,10 @@
 
 ## ERP 与 CRM 源码收藏
 
-已将 ERPNext、Aureus ERP、Twenty、Dolibarr、Monica 分别 fork 到同一账号，并在本仓库的 `references/` 下集中提供源码入口。
+已将 ERPNext、Aureus ERP、Twenty、Dolibarr、Monica，以及 A 管伊佳、B 仓图分别 fork 到同一账号，在本仓库的 `references/` 下保留固定版本，并已实际检出七套源码。
 每个项目保留自己的历史、上游关系和许可，不将多个项目代码混成一个模板。
 
-[查看五个项目、固定版本与获取方式](docs/open-source-references.md)。
+[查看七个项目、固定版本与获取方式](docs/open-source-references.md) · [源码级 UI/UX 分析](docs/ui-ux-source-study.md)。
 
 ## 候选对比
 
@@ -54,7 +54,7 @@
 
 ## 来源与复用说明
 
-截图通过原项目链接引用，没有将第三方图片、源码或完整系统重新打包进本仓库。
+截图通过原项目链接引用；源码以独立子模块保存，没有把多套源码平铺合并或作为本模板原创代码重新发布。
 图片及原项目的权利归各自权利人；**视觉候选不等于代码授权或可运行模板**。
 尤其 B 的许可包含额外销售限制，不能只按其标题当作标准 MIT。
 
@@ -62,13 +62,15 @@
 
 ## 本地研究工具
 
-需要 Python 3.10+；收集资料另需已安装的 GitHub CLI。
+需要 Python 3.10+；检出源码需 Git，收集资料另需已安装的 GitHub CLI。
 不需要安装或运行参考项目，也不需要 `uv`。
 
 ```text
 python scripts/research.py collect
 python scripts/research.py verify
 python scripts/check_candidates.py
+python scripts/fetch_references.py
+python scripts/verify_references.py
 ```
 
 支持 shell 的环境也可使用相应入口：
@@ -77,7 +79,9 @@ python scripts/check_candidates.py
 sh scripts/research.sh collect
 sh scripts/research.sh verify
 sh scripts/check_candidates.sh
+sh scripts/fetch_references.sh
+sh scripts/verify_references.sh
 ```
 
-资料只保存到被 Git 忽略的 `.research-cache/`，日志写入 `logs/`。
+图片研究缓存保存到被 Git 忽略的 `.research-cache/`，实际参考源码检出到 `references/`，日志写入 `logs/`。
 本地研究与网络资料检查不是小程序真机、业务流程或部署验收。

@@ -18,3 +18,11 @@
 	path = references/monica
 	url = https://github.com/bcxdawn222/monica.git
 	branch = main
+[submodule "references/warehouse"]
+	path = references/warehouse
+	url = https://github.com/bcxdawn222/warehouse.git
+	branch = master
+[submodule "references/jshERP"]
+	path = references/jshERP
+	url = https://github.com/bcxdawn222/jshERP.git
+	branch = master
